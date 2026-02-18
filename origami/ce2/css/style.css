@@ -244,6 +244,7 @@ div#masterclass {
 
 #about {
   background-color: var(--tan);
+  background-image: url("/origami/assets/bg_tile.png");
   padding: 20px;
   text-transform: uppercase;
 }
