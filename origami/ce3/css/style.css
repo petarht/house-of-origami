@@ -38,13 +38,13 @@ body {
 }
 
 #nav {
-  height: 80px;
-  margin: 10px 30px;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #nav > img {
-  float: left;
-  height: 100%;
+  width: 350px;
 }
 
 a.navlink {
@@ -73,14 +73,21 @@ a.navlink:hover {
 #footer {
   white-space: nowrap;
   background-color: var(--tan);
-  height: 50px;
   padding: 20px;
   font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#footer > img {
-  height: 100%;
-  margin-right: 10px;
+#footer > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#footer > div > img {
+  width: 250px;
 }
 
 .float-left {
