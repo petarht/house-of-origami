@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Aubrey&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --darkpink: #e94e77;
+  --lighttan: #eeebe6;
+  --rose: #d68189;
+  --tan: #c6a49a;
+  --ivory: #e3cfb4;
+}
+
+.background-darkpink {
+  background-color: var(--darkpink);
+}
+
+.background-lighttan {
+  background-color: var(--lighttan);
+}
+
+.background-rose {
+  background-color: var(--rose);
+}
+
+.background-tan {
+  background-color: var(--tan);
+}
+
+.background-ivory {
+  background-color: var(--ivory);
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-size: 20px;
+}
+
+#nav {
+  height: 80px;
+  margin: 10px 30px;
+}
+
+#nav > img {
+  float: left;
+  height: 100%;
+}
+
+a.navlink {
+  height: 55px;
+  background-color: var(--rose);
+  border-radius: 12px;
+  margin-left: 10px;
+  padding: 0px 20px;
+  width: fit-content;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  line-height: 55px;
+}
+
+a.navlink:hover {
+  background-color: var(--darkpink);
+}
+
+.center {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#footer {
+  white-space: nowrap;
+  background-color: var(--tan);
+  height: 50px;
+  padding: 20px;
+  font-size: 12px;
+}
+
+#footer > img {
+  height: 100%;
+  margin-right: 10px;
+}
+
+.float-left {
+  float: left;
+  margin: 0;
+}
+
+.float-right {
+  float: right;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 30px;
+  font-size: 35px;
+  text-align: center;
+  margin: 0;
+}
+
+.subheading {
+  text-align: center;
+  margin: 10px 0 20px 0;
+  width: 100%;
+}
+
+.section {
+  margin: 100px;
+}
+
+.header {
+  padding: 100px 0 0 0;
+}
+
+.pinkbox {
+  padding: 12px;
+  background-color: var(--darkpink);
+  text-decoration: none;
+  color: white;
+  border-radius: 12px;
+  text-transform: uppercase;
+  width: fit-content;
+  margin: 0;
+  border: none;
+}
+
+.pinkbox:hover {
+  background-color: black;
+}
+
+/* HOME CSS */
+
+div#welcome {
+  margin: 0px 100px 0px 100px;
+}
+
+#dragon {
+  height: 400px;
+}
+
+#dragon > div:first-child {
+  width: 65%;
+}
+
+#featured-lesson {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+#enroll {
+  background-color: var(--tan);
+  border-radius: 12px;
+  color: white;
+  width: 25%;
+  padding: 30px;
+}
+
+#enroll > * {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#enroll > p {
+  width: 100%;
+  text-align: center;
+}
+
+#enroll > p:first-child {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#enroll > :last-child {
+  margin-bottom: 0px;
+}
+
+#price {
+  height: 100px;
+  width: 100px;
+  border: 3px solid white;
+  border-radius: 50px;
+  background-color: var(--ivory);
+}
+
+#price > p {
+  color: var(--darkpink);
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  width: 100%;
+  line-height: 50%;
+}
+
+p#explain {
+  margin: 100px;
+}
+
+div#masterclass {
+  background-color: var(--lighttan);
+}
+
+.imgcenter {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+#animals {
+  text-align: center;
+}
+
+.animalbox {
+  background-color: white;
+  margin-right: 10px;
+  padding: 15px;
+  border-radius: 12px;
+  width: 18%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.animalbox:last-of-type {
+  margin-right: 0;
+}
+
+.animalbox > img {
+  width: 100%;
+}
+
+.animal-name {
+  text-align: center;
+  font-weight: 700;
+  width: fit-content;
+}
+
+.description {
+  font-size: 18px;
+  text-align: left;
+}
+
+.rating {
+  text-align: center;
+  width: 100%;
+  font-weight: 900;
+  font-size: 30px;
+  margin: 0;
+}
+
+.skill {
+  text-align: center;
+  width: 100%;
+  color: black;
+  font-size: 16px;
+  margin: 0;
+}
+
+#home-h1 {
+  font-family: "Aubrey", sans-serif;
+  text-align: center;
+}
+
+/* ABOUT CSS */
+
+#banner {
+  background-color: var(--tan);
+  background-image: url("/origami/assets/bg_tile.png");
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+#banner-h1 {
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  margin: 20px;
+  font-size: 60px;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+.name {
+  font-weight: 850;
+  text-align: center;
+  width: 100%;
+  margin: 0%;
+}
+
+.name-sub {
+  text-align: center;
+  width: 100%;
+  margin: 0%;
+}
+
+#masters {
+  text-align: center;
+}
+
+.schoolbox {
+  padding: 20px;
+  display: inline-block;
+  min-height: 100px;
+}
+
+#school-masters-div {
+  overflow: hidden;
+  margin: 0 100px;
+}
+
+#school-masters {
+  background-color: var(--lighttan);
+  padding: 100px;
+}
+
+#headmaster {
+  width: 50%;
+  text-align: center;
+}
+
+#headmaster > img {
+  height: 300px;
+  width: 300px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+#personnel {
+  width: 50%;
+}
+
+.masterbox {
+  width: fit-content;
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+}
+
+.masterbox > img {
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+}
+
+.round-img {
+  border-radius: 50%;
+}

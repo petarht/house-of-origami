@@ -1,0 +1,76 @@
+.enroll {
+  text-align: center;
+  width: 100%;
+  font-weight: 300;
+  font-size: 30px;
+  margin: 0;
+}
+
+#lesson-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.animal-card {
+  background-color: var(--ivory);
+  padding: 15px;
+  border-radius: 12px;
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.animal-card > img {
+  width: 250px;
+  margin: 0;
+}
+
+.animal-card > p {
+  text-align: center;
+  font-weight: 700;
+  width: fit-content;
+  margin: 0;
+}
+
+.pinkbox > p {
+  margin: 0;
+}
+
+#video-lessons {
+  background-color: var(--lighttan);
+  margin-top: 100px;
+}
+
+#videos {
+  display: flex;
+  margin: 0 100px;
+  justify-content: center;
+  padding-bottom: 100px;
+  gap: 20px;
+}
+
+.video {
+  background-color: white;
+  padding: 15px;
+  border-radius: 12px;
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.video > p {
+  text-align: center;
+  font-weight: 700;
+  width: fit-content;
+  margin: 0;
+}
