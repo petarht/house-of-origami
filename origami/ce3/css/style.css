@@ -37,6 +37,12 @@ body {
   font-size: 20px;
 }
 
+h1,
+h2,
+p {
+  margin: 0;
+}
+
 #nav {
   padding: 10px 30px;
   display: flex;
@@ -150,16 +156,42 @@ h2 {
 
 /* HOME CSS */
 
-div#welcome {
-  margin: 0px 100px 0px 100px;
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+#welcome {
+  margin: 100px 150px 0px 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#welcome > h1 {
+  font-family: "Aubrey", sans-serif;
+}
+
+.lesson {
+  background-color: var(--lighttan);
+  padding: 100px;
+}
+
+.lesson > div {
+  margin: 0 150px;
+}
+
+#featured {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 #dragon {
-  height: 400px;
-}
-
-#dragon > div:first-child {
-  width: 65%;
+  display: flex;
+  gap: 20px;
 }
 
 #featured-lesson {
@@ -171,13 +203,13 @@ div#welcome {
   background-color: var(--tan);
   border-radius: 12px;
   color: white;
-  width: 25%;
   padding: 30px;
-}
 
-#enroll > * {
-  margin-top: 0;
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 250px;
+  gap: 10px;
 }
 
 #enroll > p {
@@ -200,6 +232,9 @@ div#welcome {
   border: 3px solid white;
   border-radius: 50px;
   background-color: var(--ivory);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #price > p {
@@ -211,8 +246,13 @@ div#welcome {
   line-height: 50%;
 }
 
+#enroll > button {
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
 p#explain {
-  margin: 100px;
+  margin: 0 100px;
 }
 
 div#masterclass {
@@ -222,25 +262,22 @@ div#masterclass {
 .imgcenter {
   width: 100%;
   border-radius: 12px;
-  margin-bottom: 20px;
 }
 
 #animals {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .animalbox {
-  background-color: white;
-  margin-right: 10px;
   padding: 15px;
+  background-color: white;
   border-radius: 12px;
-  width: 18%;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.animalbox:last-of-type {
-  margin-right: 0;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .animalbox > img {
@@ -249,8 +286,8 @@ div#masterclass {
 
 .animal-name {
   text-align: center;
+  width: 100%;
   font-weight: 700;
-  width: fit-content;
 }
 
 .description {
@@ -258,25 +295,26 @@ div#masterclass {
   text-align: left;
 }
 
+.rating-box {
+  padding: 12px;
+  background-color: var(--darkpink);
+  border-radius: 12px;
+  width: fit-content;
+}
+
 .rating {
   text-align: center;
   width: 100%;
   font-weight: 900;
   font-size: 30px;
-  margin: 0;
+  color: white;
 }
 
 .skill {
   text-align: center;
   width: 100%;
-  color: black;
   font-size: 16px;
-  margin: 0;
-}
-
-#home-h1 {
-  font-family: "Aubrey", sans-serif;
-  text-align: center;
+  text-transform: uppercase;
 }
 
 /* ABOUT CSS */
