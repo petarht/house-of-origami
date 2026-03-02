@@ -96,23 +96,8 @@ a.navlink:hover {
   width: 250px;
 }
 
-.float-left {
-  float: left;
-  margin: 0;
-}
-
-.float-right {
-  float: right;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .italic {
   font-style: italic;
-}
-
-.display-inline-block {
-  display: inline-block;
 }
 
 h2 {
@@ -336,67 +321,94 @@ div#masterclass {
   font-weight: 400;
 }
 
+#origami-masters {
+  background-color: white;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .name {
   font-weight: 850;
   text-align: center;
   width: 100%;
-  margin: 0%;
 }
 
 .name-sub {
   text-align: center;
   width: 100%;
-  margin: 0%;
 }
 
 #masters {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 
 .schoolbox {
-  padding: 20px;
-  display: inline-block;
-  min-height: 100px;
-}
-
-#school-masters-div {
-  overflow: hidden;
-  margin: 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
 
 #school-masters {
   background-color: var(--lighttan);
-  padding: 100px;
+  padding: 100px 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#school-masters-div {
+  display: flex;
 }
 
 #headmaster {
-  width: 50%;
-  text-align: center;
+  flex: 1;
+  display: flex;
+  justify-content: baseline;
 }
 
-#headmaster > img {
+#headmaster > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+#headmaster > div > img {
   height: 300px;
   width: 300px;
   border-radius: 12px;
   margin-bottom: 20px;
-  display: inline-block;
 }
 
 #personnel {
-  width: 50%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+#personnel > div {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
 }
 
 .masterbox {
-  width: fit-content;
-  display: inline-block;
-  margin: 20px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 
 .masterbox > img {
   height: 150px;
   width: 150px;
-  display: inline-block;
 }
 
 .round-img {
