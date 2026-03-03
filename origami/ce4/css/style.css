@@ -53,18 +53,19 @@ p {
   width: 350px;
 }
 
-a.navlink {
-  height: 55px;
+#nav > div {
+  display: flex;
+  gap: 10px;
+}
+
+.navlink {
   background-color: var(--rose);
   border-radius: 12px;
-  margin-left: 10px;
-  padding: 0px 20px;
-  width: fit-content;
-  display: inline-block;
+  padding: 10px 20px;
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  line-height: 55px;
+  height: fit-content;
 }
 
 a.navlink:hover {
@@ -140,6 +141,34 @@ h2 {
   background-color: black;
 }
 
+@media (max-width: 428px) {
+  #nav {
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 10px;
+  }
+
+  .navlink {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  h2 {
+    letter-spacing: 5px;
+    font-size: 35px;
+  }
+
+  #footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #footer > div {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
 /* HOME CSS */
 
 #main-home {
@@ -158,6 +187,7 @@ h2 {
 
 #welcome > h1 {
   font-family: "Aubrey", sans-serif;
+  text-align: center;
 }
 
 .lesson {
@@ -237,7 +267,7 @@ h2 {
   padding: 10px 20px;
 }
 
-p#explain {
+#explain {
   margin: 0 100px;
 }
 
@@ -301,6 +331,36 @@ div#masterclass {
   width: 100%;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+@media (max-width: 428px) {
+  #main-home {
+    gap: 50px;
+  }
+
+  #welcome {
+    margin: 50px 20px 0px 20px;
+  }
+
+  .lesson {
+    padding: 50px 20px;
+  }
+
+  .lesson > div {
+    margin: 0px;
+  }
+
+  #dragon {
+    flex-direction: column;
+  }
+
+  #explain {
+    margin: 0 20px;
+  }
+
+  #animals-container {
+    flex-direction: column;
+  }
 }
 
 /* ABOUT CSS */
