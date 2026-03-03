@@ -142,7 +142,7 @@ h2 {
 
 /* HOME CSS */
 
-main {
+#main-home {
   display: flex;
   flex-direction: column;
   gap: 100px;
@@ -250,7 +250,7 @@ div#masterclass {
   border-radius: 12px;
 }
 
-#animals {
+#animals-container {
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -489,4 +489,120 @@ div#masterclass {
   font-weight: 700;
   width: fit-content;
   margin: 0;
+}
+
+/* CONTACT CSS */
+
+iframe {
+  width: 100%;
+  height: 400px;
+}
+
+#contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px;
+  gap: 100px;
+}
+
+#contact > div:first-of-type {
+  flex: 1;
+}
+
+#contact > div > h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form > div {
+  display: flex;
+}
+
+form > div > label:first-of-type {
+  min-width: 100px;
+}
+
+#interests-container > div {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  background-color: var(--lighttan);
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  width: 100%;
+  padding: 1px 2px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 60px;
+}
+
+input[type="submit"] {
+  font-weight: 700;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+#headquarters-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#headquarters-container > div {
+  display: flex;
+}
+
+#headquarters-container > div > p:first-of-type {
+  width: 80px;
+  font-weight: 600;
+}
+
+#socials-container {
+  display: flex;
+  gap: 10px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+#facebook:hover {
+  background-color: #1877f2;
+}
+
+#instagram:hover {
+  background: #833ab4;
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+}
+
+#youtube:hover {
+  background-color: #ff0000;
+}
+
+#behance:hover {
+  background-color: #1769ff;
+}
+
+#twitter:hover {
+  background-color: black;
 }
