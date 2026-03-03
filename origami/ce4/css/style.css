@@ -121,10 +121,6 @@ h2 {
   margin: 100px;
 }
 
-.header {
-  padding: 100px 0 0 0;
-}
-
 .pinkbox {
   padding: 12px;
   background-color: var(--darkpink);
@@ -166,6 +162,10 @@ h2 {
   #footer > div {
     flex-direction: column;
     gap: 10px;
+  }
+
+  #footer > div > p {
+    text-align: center;
   }
 }
 
@@ -486,30 +486,27 @@ div#masterclass {
   margin: 0;
 }
 
+#masterclass-lessons {
+  padding: 100px;
+}
+
 #lesson-cards {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 
 .animal-card {
   background-color: var(--ivory);
   padding: 15px;
   border-radius: 12px;
-  width: 300px;
+  width: 250px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-}
-
-.animal-card > img {
-  width: 250px;
-  margin: 0;
 }
 
 .animal-card > p {
@@ -521,14 +518,14 @@ div#masterclass {
 
 #video-lessons {
   background-color: var(--lighttan);
-  margin-top: 100px;
+  padding: 100px;
 }
 
 #videos {
   display: flex;
-  margin: 0 100px;
+  /* margin: 0 100px; */
   justify-content: center;
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
   gap: 20px;
 }
 
@@ -549,6 +546,52 @@ div#masterclass {
   font-weight: 700;
   width: fit-content;
   margin: 0;
+}
+
+.thumbnail {
+  width: 320px;
+  height: 180px;
+}
+
+@media (max-width: 428px) {
+  #banner-h1 {
+    text-align: center;
+    margin: 0;
+  }
+
+  #masterclass-lessons {
+    padding: 20px;
+  }
+
+  .animal-card {
+    width: 100%;
+    gap: 10px;
+  }
+
+  #video-lessons {
+    padding: 20px;
+  }
+
+  #videos {
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .video {
+    width: auto;
+  }
+
+  .thumbnail {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: auto;
+  }
+
+  .header {
+    padding: 0;
+  }
 }
 
 /* CONTACT CSS */
