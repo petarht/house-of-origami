@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Aubrey&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --darkpink: #e94e77;
+  --lighttan: #eeebe6;
+  --rose: #d68189;
+  --tan: #c6a49a;
+  --ivory: #e3cfb4;
+}
+
+.background-darkpink {
+  background-color: var(--darkpink);
+}
+
+.background-lighttan {
+  background-color: var(--lighttan);
+}
+
+.background-rose {
+  background-color: var(--rose);
+}
+
+.background-tan {
+  background-color: var(--tan);
+}
+
+.background-ivory {
+  background-color: var(--ivory);
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-size: 20px;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+#nav {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav > img {
+  width: 350px;
+}
+
+a.navlink {
+  height: 55px;
+  background-color: var(--rose);
+  border-radius: 12px;
+  margin-left: 10px;
+  padding: 0px 20px;
+  width: fit-content;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  line-height: 55px;
+}
+
+a.navlink:hover {
+  background-color: var(--darkpink);
+  transform: translateY(5px);
+}
+
+.center {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#footer {
+  white-space: nowrap;
+  background-color: var(--tan);
+  padding: 20px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#footer > div > img {
+  width: 250px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 30px;
+  font-size: 35px;
+  text-align: center;
+  margin: 0;
+}
+
+.subheading {
+  text-align: center;
+  margin: 10px 0 20px 0;
+  width: 100%;
+}
+
+.section {
+  margin: 100px;
+}
+
+.header {
+  padding: 100px 0 0 0;
+}
+
+.pinkbox {
+  padding: 12px;
+  background-color: var(--darkpink);
+  text-decoration: none;
+  color: white;
+  border-radius: 12px;
+  text-transform: uppercase;
+  width: fit-content;
+  margin: 0;
+  border: none;
+}
+
+.pinkbox:hover {
+  background-color: black;
+}
+
+/* HOME CSS */
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+#welcome {
+  margin: 100px 150px 0px 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#welcome > h1 {
+  font-family: "Aubrey", sans-serif;
+}
+
+.lesson {
+  background-color: var(--lighttan);
+  padding: 100px;
+}
+
+.lesson > div {
+  margin: 0 150px;
+}
+
+#featured {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#dragon {
+  display: flex;
+  gap: 20px;
+}
+
+#featured-lesson {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+#enroll {
+  background-color: var(--tan);
+  border-radius: 12px;
+  color: white;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 250px;
+  gap: 10px;
+}
+
+#enroll > p {
+  width: 100%;
+  text-align: center;
+}
+
+#enroll > p:first-child {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#enroll > :last-child {
+  margin-bottom: 0px;
+}
+
+#price {
+  height: 100px;
+  width: 100px;
+  border: 3px solid white;
+  border-radius: 50px;
+  background-color: var(--ivory);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#price > p {
+  color: var(--darkpink);
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  width: 100%;
+  line-height: 50%;
+}
+
+#enroll > button {
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+p#explain {
+  margin: 0 100px;
+}
+
+div#masterclass {
+  background-color: var(--lighttan);
+}
+
+.imgcenter {
+  width: 100%;
+  border-radius: 12px;
+}
+
+#animals {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.animalbox {
+  padding: 15px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.animalbox > img {
+  width: 100%;
+}
+
+.animal-name {
+  text-align: center;
+  width: 100%;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 18px;
+  text-align: left;
+}
+
+.rating-box {
+  padding: 12px;
+  background-color: var(--darkpink);
+  border-radius: 12px;
+  width: fit-content;
+}
+
+.rating {
+  text-align: center;
+  width: 100%;
+  font-weight: 900;
+  font-size: 30px;
+  color: white;
+}
+
+.skill {
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* ABOUT CSS */
+
+#banner {
+  background-color: var(--tan);
+  background-image: url("/origami/assets/bg_tile.png");
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+#banner-h1 {
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  margin: 20px;
+  font-size: 60px;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+#origami-masters {
+  background-color: white;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.name {
+  font-weight: 850;
+  text-align: center;
+  width: 100%;
+}
+
+.name-sub {
+  text-align: center;
+  width: 100%;
+}
+
+#masters {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.schoolbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+#school-masters {
+  background-color: var(--lighttan);
+  padding: 100px 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#school-masters-div {
+  display: flex;
+}
+
+#headmaster {
+  flex: 1;
+  display: flex;
+  justify-content: baseline;
+}
+
+#headmaster > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+#headmaster > div > img {
+  height: 300px;
+  width: 300px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+#personnel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+#personnel > div {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.masterbox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.masterbox > img {
+  height: 150px;
+  width: 150px;
+}
+
+.round-img {
+  border-radius: 50%;
+}
+
+/* LESSONS CSS */
+
+.enroll {
+  text-align: center;
+  width: 100%;
+  font-weight: 300;
+  font-size: 30px;
+  margin: 0;
+}
+
+#lesson-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.animal-card {
+  background-color: var(--ivory);
+  padding: 15px;
+  border-radius: 12px;
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.animal-card > img {
+  width: 250px;
+  margin: 0;
+}
+
+.animal-card > p {
+  text-align: center;
+  font-weight: 700;
+  width: fit-content;
+  margin: 0;
+}
+
+#video-lessons {
+  background-color: var(--lighttan);
+  margin-top: 100px;
+}
+
+#videos {
+  display: flex;
+  margin: 0 100px;
+  justify-content: center;
+  padding-bottom: 100px;
+  gap: 20px;
+}
+
+.video {
+  background-color: white;
+  padding: 15px;
+  border-radius: 12px;
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.video > p {
+  text-align: center;
+  font-weight: 700;
+  width: fit-content;
+  margin: 0;
+}
