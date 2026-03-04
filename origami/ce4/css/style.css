@@ -195,10 +195,6 @@ h2 {
   padding: 100px;
 }
 
-.lesson > div {
-  margin: 0 150px;
-}
-
 #featured {
   display: flex;
   flex-direction: column;
@@ -388,6 +384,7 @@ div#masterclass {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 100px;
 }
 
 .name {
@@ -474,6 +471,37 @@ div#masterclass {
 
 .round-img {
   border-radius: 50%;
+}
+
+@media (max-width: 428px) {
+  #origami-masters,
+  #school-masters {
+    padding: 50px 20px;
+  }
+
+  #masters {
+    flex-direction: column;
+    /* gap: 100px; */
+  }
+
+  #school-masters-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  #personnel > div {
+    gap: 50px;
+  }
+
+  .masterbox > img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .name-sub {
+    font-size: 16px;
+  }
 }
 
 /* LESSONS CSS */
