@@ -87,23 +87,6 @@ a {
   text-decoration: none;
 }
 
-ul {
-  gap: 10px;
-}
-
-li {
-  list-style-type: none;
-}
-
-li > a {
-  color: var(--brown);
-  text-decoration: none;
-  font-size: 16px;
-}
-li > a:hover {
-  text-decoration: underline;
-}
-
 nav {
   background-color: var(--beige);
   padding: 24px 64px;
@@ -129,10 +112,50 @@ nav > div {
   gap: 28px;
 }
 
+#nav-links {
+  gap: 10px;
+}
+
+#nav-links > li {
+  list-style-type: none;
+}
+
+#nav-links > li > a {
+  color: var(--brown);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#nav-links > li > a:hover {
+  text-decoration: underline;
+}
+
 .icon-button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+#menu {
+  display: none;
+}
+
+@media (max-width: 428px) {
+  nav {
+    padding: 24px 36px;
+  }
+
+  .logo > p {
+    display: none;
+  }
+
+  #nav-links {
+    display: none;
+  }
+
+  #menu {
+    display: initial;
+  }
 }
 
 section {
@@ -144,6 +167,17 @@ h1 {
   font-family: "Dela Gothic One", sans-serif;
   font-size: 36px;
   text-transform: uppercase;
+  color: var(--brown);
+}
+
+@media (max-width: 428px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  section {
+    padding: 24px;
+  }
 }
 
 #best-seller > div {
@@ -151,6 +185,12 @@ h1 {
   flex-direction: column;
   justify-content: center;
   gap: 40px;
+}
+
+@media (max-width: 428px) {
+  #best-seller {
+    flex-direction: column;
+  }
 }
 
 #featured {
@@ -175,6 +215,28 @@ h1 {
   text-align: center;
 }
 
+@media (max-width: 428px) {
+  #featured > div {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .featured-cards {
+    align-items: center;
+    width: fit-content;
+  }
+
+  .featured-cards > img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .featured-cards > button {
+    width: 100%;
+  }
+}
+
 #pure-ingredients {
   justify-content: space-between;
 }
@@ -185,7 +247,8 @@ h1 {
 
 #rating {
   flex-direction: column;
-  width: 60%;
+  flex: 0 0 60%;
+  box-sizing: border-box;
   padding: 32px;
   background-color: white;
   border: 1px solid #e6e6e6;
@@ -206,6 +269,21 @@ h1 {
   padding-left: 24px;
 }
 
+@media (max-width: 428px) {
+  #pure-ingredients {
+    flex-direction: column;
+  }
+
+  #rating {
+    padding: 24px;
+    flex: 0 0 100%;
+  }
+
+  #rating > p {
+    padding: 0px;
+  }
+}
+
 footer {
   background-color: var(--beige);
   padding: 32px 64px;
@@ -221,7 +299,8 @@ footer > div {
 
 footer > p {
   text-align: center;
-  font-size: 16px;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 #footer-links > div {
@@ -241,4 +320,13 @@ footer > p {
 
 #footer-links > a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 428px) {
+  footer {
+    padding: 24px;
+  }
+  #footer-links {
+    flex-direction: column;
+  }
 }
