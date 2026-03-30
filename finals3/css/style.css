@@ -328,5 +328,6 @@ footer > p {
   }
   #footer-links {
     flex-direction: column;
+    gap: 12px;
   }
 }
