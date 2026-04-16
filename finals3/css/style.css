@@ -44,6 +44,10 @@ p {
   display: flex;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -170,6 +174,12 @@ h1 {
   color: var(--brown);
 }
 
+h2 {
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 24px;
+  color: var(--brown);
+}
+
 @media (max-width: 428px) {
   h1 {
     font-size: 24px;
@@ -177,110 +187,6 @@ h1 {
 
   section {
     padding: 24px;
-  }
-}
-
-#best-seller > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 40px;
-}
-
-@media (max-width: 428px) {
-  #best-seller {
-    flex-direction: column;
-  }
-}
-
-#featured {
-  gap: 40px;
-  flex-direction: column;
-  background-color: var(--green);
-}
-
-#featured > div {
-  display: flex;
-  justify-content: center;
-  gap: 49px;
-}
-
-.featured-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.featured-cards > p {
-  text-align: center;
-}
-
-@media (max-width: 428px) {
-  #featured > div {
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-  }
-
-  .featured-cards {
-    align-items: center;
-    width: fit-content;
-  }
-
-  .featured-cards > img {
-    width: 180px;
-    height: 180px;
-  }
-
-  .featured-cards > button {
-    width: 100%;
-  }
-}
-
-#pure-ingredients {
-  justify-content: space-between;
-}
-
-#pure-ingredients > * > h1 {
-  text-transform: none;
-}
-
-#rating {
-  flex-direction: column;
-  flex: 0 0 60%;
-  box-sizing: border-box;
-  padding: 32px;
-  background-color: white;
-  border: 1px solid #e6e6e6;
-  border-radius: 16px;
-  gap: 20px;
-}
-
-#rating > div {
-  justify-content: space-between;
-}
-
-#rating > div > div {
-  width: 50%;
-  gap: 16px;
-}
-
-#rating > p {
-  padding-left: 24px;
-}
-
-@media (max-width: 428px) {
-  #pure-ingredients {
-    flex-direction: column;
-  }
-
-  #rating {
-    padding: 24px;
-    flex: 0 0 100%;
-  }
-
-  #rating > p {
-    padding: 0px;
   }
 }
 
