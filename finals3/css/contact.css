@@ -1,0 +1,47 @@
+section {
+  display: flex;
+  justify-content: space-between;
+  padding: 64px;
+}
+
+section > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+section > img {
+  width: 460px;
+  height: 460px;
+}
+
+#description-desktop {
+  color: #3d19008c;
+  font-size: 24px;
+}
+
+#description-mobile {
+  display: none;
+  color: #3d19008c;
+  font-size: 24px;
+}
+
+@media (max-width: 428px) {
+  section {
+    flex-direction: column;
+  }
+
+  section > img {
+    width: 280px;
+    height: 280px;
+  }
+
+  #description-desktop {
+    display: none;
+    color: red;
+  }
+
+  #description-mobile {
+    display: initial;
+  }
+}
