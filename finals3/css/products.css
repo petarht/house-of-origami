@@ -66,6 +66,10 @@ p {
   color: var(--green);
 }
 
+#shop-button:hover {
+  color: var(--brown);
+}
+
 #soaps {
   background-color: var(--green);
   flex-direction: row-reverse;
