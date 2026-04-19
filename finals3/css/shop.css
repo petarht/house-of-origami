@@ -1,0 +1,35 @@
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 120px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.product-card > img {
+  width: 300px;
+  height: 300px;
+}
+
+.product-name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.grey-circle {
+  width: 24px;
+  height: 24px;
+  background-color: var(--grey);
+  border-radius: 12px;
+}
+
+.product-price {
+  color: #3d19008c;
+}
