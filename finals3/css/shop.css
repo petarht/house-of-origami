@@ -9,7 +9,7 @@ main > div {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
   padding: 120px;
-  width: fit-content;
+  height: fit-content;
 }
 
 .product-card {
@@ -50,7 +50,7 @@ main > div {
 @media (max-width: 428px) {
   main > div {
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    gap: 20px 12px;
   }
 
   .product-card {
