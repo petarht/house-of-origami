@@ -50,6 +50,7 @@ main > div {
 @media (max-width: 428px) {
   main > div {
     grid-template-columns: 1fr 1fr;
+    gap: 12px;
   }
 
   .product-card {
